@@ -19,10 +19,6 @@ namespace FirstWindowsApp
             {
                 OutputTxtBox.Text = '0'+inputCellPhone.Substring(3);
             }
-            else if (inputCellPhone.Length == 10 && inputCellPhone[0].Equals('9'))
-            {
-
-            }
             else
             {
                 OutputTxtBox.Text = "Worng Number";
