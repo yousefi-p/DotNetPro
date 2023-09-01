@@ -5,7 +5,11 @@ VisualStudioVersion = 17.6.33927.249
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session02", "Session02", "{CC336450-D727-4373-9087-DEDADC8D49A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirstWindowsApp", "FirstWindowsApp\FirstWindowsApp\FirstWindowsApp.csproj", "{E0C5922B-113E-473A-9AA1-20256BDC20E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWindowsApp", "FirstWindowsApp\FirstWindowsApp\FirstWindowsApp.csproj", "{E0C5922B-113E-473A-9AA1-20256BDC20E2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seasion04", "Seasion04", "{403579F8-E96B-49A2-A812-624C8FC8E74E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentificationApp", "IdentificationApp\IdentificationApp.csproj", "{80A41BBE-0FEB-4DD7-856B-924036E19673}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +21,17 @@ Global
 		{E0C5922B-113E-473A-9AA1-20256BDC20E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0C5922B-113E-473A-9AA1-20256BDC20E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0C5922B-113E-473A-9AA1-20256BDC20E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80A41BBE-0FEB-4DD7-856B-924036E19673}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80A41BBE-0FEB-4DD7-856B-924036E19673}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80A41BBE-0FEB-4DD7-856B-924036E19673}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80A41BBE-0FEB-4DD7-856B-924036E19673}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{E0C5922B-113E-473A-9AA1-20256BDC20E2} = {CC336450-D727-4373-9087-DEDADC8D49A2}
+		{80A41BBE-0FEB-4DD7-856B-924036E19673} = {403579F8-E96B-49A2-A812-624C8FC8E74E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1345533A-4ECA-4836-AE70-675FFBF4F5FB}
