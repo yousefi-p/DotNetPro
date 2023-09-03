@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace IdentificationApp
 {
-    public partial class ShowDetails : Form
+    public partial class Form2 : Form
     {
-        public ShowDetails()
+        public Form2()
         {
             InitializeComponent();
         }

@@ -42,6 +42,8 @@
             button1 = new Button();
             fileSystemWatcher1 = new FileSystemWatcher();
             notifyIcon1 = new NotifyIcon(components);
+            label6 = new Label();
+            count_label = new Label();
             ((System.ComponentModel.ISupportInitialize)fileSystemWatcher1).BeginInit();
             SuspendLayout();
             // 
@@ -159,12 +161,32 @@
             notifyIcon1.Text = "notifyIcon1";
             notifyIcon1.Visible = true;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(137, 289);
+            label6.Name = "label6";
+            label6.Size = new Size(43, 15);
+            label6.TabIndex = 7;
+            label6.Text = "Person";
+            // 
+            // count_label
+            // 
+            count_label.AutoSize = true;
+            count_label.Location = new Point(97, 289);
+            count_label.Name = "count_label";
+            count_label.Size = new Size(13, 15);
+            count_label.TabIndex = 8;
+            count_label.Text = "0";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(338, 324);
+            Controls.Add(count_label);
+            Controls.Add(label6);
             Controls.Add(button1);
             Controls.Add(genderCombo);
             Controls.Add(cellPhoneTxtBox);
@@ -199,5 +221,7 @@
         private Button button1;
         private FileSystemWatcher fileSystemWatcher1;
         private NotifyIcon notifyIcon1;
+        private Label count_label;
+        private Label label6;
     }
 }

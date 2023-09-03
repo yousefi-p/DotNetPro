@@ -16,15 +16,7 @@ namespace IdentificationApp
 
     }
 
-    internal class Person
-    {
-        public int Id { get; set; }
-        public string? FirstName { get; set; }
-        public string? LastName { get; set; }
-        public string? NationalID { get; set; }
-        public string? CellPhone { get; set; }
-        public int? Gender { get; set; }
-    }
+
 
     
 }

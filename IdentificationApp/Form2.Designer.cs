@@ -1,6 +1,6 @@
 ﻿namespace IdentificationApp
 {
-    partial class ShowDetails
+    public partial class Form2
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            SuspendLayout();
-            // 
-            // ShowDetails
-            // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(338, 324);
-            Name = "ShowDetails";
-            Text = "Show Details";
-            ResumeLayout(false);
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(300, 300);
+            this.Text = "Show Details";
+            
         }
 
         #endregion

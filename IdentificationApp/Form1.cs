@@ -2,6 +2,7 @@ namespace IdentificationApp
 {
     public partial class Main : Form
     {
+        List<Person> people = new List<Person>();
         Person person = new Person();
         public Main()
         {
@@ -40,6 +41,8 @@ namespace IdentificationApp
                 person.NationalID = nationalIdTxtBox.Text;
                 person.CellPhone = cellPhoneTxtBox.Text;
                 person.Gender = genderCombo.SelectedIndex;
+                people.Add(person);
+                count_label.Text = people.Count.ToString();
                 firstNameTxtBox.Text = string.Empty;
                 lastNameTxtBox.Text = string.Empty;
                 nationalIdTxtBox.Text = string.Empty;
@@ -47,11 +50,7 @@ namespace IdentificationApp
                 genderCombo.SelectedIndex = 0;
                 
             }
-            else
-            {
-                notifyIcon1.Text = "You should fill all the information";
-                notifyIcon1.Visible = true;
-            }
+
 
         }
 
