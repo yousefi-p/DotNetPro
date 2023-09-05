@@ -15,9 +15,9 @@ namespace FirstWindowsApp
                 OutputTxtBox.Text = inputCellPhone;
 
             }
-            else if (inputCellPhone.Length == 13 && inputCellPhone.Substring(0,3).Equals("+98"))
+            else if (inputCellPhone.Length == 13 && inputCellPhone.Substring(0, 3).Equals("+98"))
             {
-                OutputTxtBox.Text = '0'+inputCellPhone.Substring(3);
+                OutputTxtBox.Text = '0' + inputCellPhone.Substring(3);
             }
             else if (inputCellPhone.Length == 14 && inputCellPhone.Substring(0, 4).Equals("0098"))
             {

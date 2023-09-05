@@ -48,7 +48,7 @@ namespace IdentificationApp
                 nationalIdTxtBox.Text = string.Empty;
                 cellPhoneTxtBox.Text = string.Empty;
                 genderCombo.SelectedIndex = 0;
-                
+
             }
 
 

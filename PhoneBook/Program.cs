@@ -1,4 +1,4 @@
-namespace IdentificationApp
+namespace PhoneBook
 {
     internal static class Program
     {
@@ -12,11 +12,18 @@ namespace IdentificationApp
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new Main());
+
+
         }
 
+        public class Contact
+        {
+            public string First_Name { get; set; }
+            public string Last_Name { get; set;}
+            public string HomeNumber { get; set; }
+            public string CellPhone { get; set; }
+            public string OfficeNumber { get; set;}
+            public string Address { get; set; }
+        }
     }
-
-
-
-
 }
