@@ -38,10 +38,11 @@
             // ContactList
             // 
             ContactList.FormattingEnabled = true;
-            ContactList.ItemHeight = 20;
-            ContactList.Location = new Point(23, 74);
+            ContactList.ItemHeight = 15;
+            ContactList.Location = new Point(20, 56);
+            ContactList.Margin = new Padding(3, 2, 3, 2);
             ContactList.Name = "ContactList";
-            ContactList.Size = new Size(150, 104);
+            ContactList.Size = new Size(132, 79);
             ContactList.TabIndex = 0;
             // 
             // menuStrip1
@@ -50,7 +51,8 @@
             menuStrip1.Items.AddRange(new ToolStripItem[] { contactToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(800, 28);
+            menuStrip1.Padding = new Padding(5, 2, 0, 2);
+            menuStrip1.Size = new Size(700, 24);
             menuStrip1.TabIndex = 1;
             menuStrip1.Text = "menuStrip1";
             // 
@@ -58,27 +60,29 @@
             // 
             contactToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addToolStripMenuItem });
             contactToolStripMenuItem.Name = "contactToolStripMenuItem";
-            contactToolStripMenuItem.Size = new Size(74, 24);
+            contactToolStripMenuItem.Size = new Size(61, 20);
             contactToolStripMenuItem.Text = "Contact";
             // 
             // addToolStripMenuItem
             // 
             addToolStripMenuItem.Name = "addToolStripMenuItem";
-            addToolStripMenuItem.Size = new Size(224, 26);
+            addToolStripMenuItem.Size = new Size(96, 22);
             addToolStripMenuItem.Text = "Add";
             addToolStripMenuItem.Click += addToolStripMenuItem_Click;
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(700, 338);
             Controls.Add(ContactList);
             Controls.Add(menuStrip1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
             MainMenuStrip = menuStrip1;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form1";
             Text = "Main App";
+            Activated += Form1_Activated;
             Load += Form1_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

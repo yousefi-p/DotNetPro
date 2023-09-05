@@ -41,73 +41,78 @@
             // 
             // FirstNameTxt
             // 
-            FirstNameTxt.Location = new Point(165, 12);
+            FirstNameTxt.Location = new Point(144, 9);
+            FirstNameTxt.Margin = new Padding(3, 2, 3, 2);
             FirstNameTxt.Name = "FirstNameTxt";
-            FirstNameTxt.Size = new Size(188, 27);
+            FirstNameTxt.Size = new Size(165, 23);
             FirstNameTxt.TabIndex = 0;
             // 
             // LastNameTxt
             // 
-            LastNameTxt.Location = new Point(165, 59);
+            LastNameTxt.Location = new Point(144, 44);
+            LastNameTxt.Margin = new Padding(3, 2, 3, 2);
             LastNameTxt.Name = "LastNameTxt";
-            LastNameTxt.Size = new Size(188, 27);
+            LastNameTxt.Size = new Size(165, 23);
             LastNameTxt.TabIndex = 0;
             // 
             // CellPhoneTxt
             // 
-            CellPhoneTxt.Location = new Point(165, 103);
+            CellPhoneTxt.Location = new Point(144, 77);
+            CellPhoneTxt.Margin = new Padding(3, 2, 3, 2);
             CellPhoneTxt.Name = "CellPhoneTxt";
-            CellPhoneTxt.Size = new Size(188, 27);
+            CellPhoneTxt.Size = new Size(165, 23);
             CellPhoneTxt.TabIndex = 0;
             // 
             // AddressTxt
             // 
-            AddressTxt.Location = new Point(165, 149);
+            AddressTxt.Location = new Point(144, 112);
+            AddressTxt.Margin = new Padding(3, 2, 3, 2);
             AddressTxt.Name = "AddressTxt";
-            AddressTxt.Size = new Size(188, 27);
+            AddressTxt.Size = new Size(165, 23);
             AddressTxt.TabIndex = 0;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(45, 15);
+            label1.Location = new Point(39, 11);
             label1.Name = "label1";
-            label1.Size = new Size(80, 20);
+            label1.Size = new Size(64, 15);
             label1.TabIndex = 1;
             label1.Text = "First Name";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(45, 62);
+            label2.Location = new Point(39, 46);
             label2.Name = "label2";
-            label2.Size = new Size(79, 20);
+            label2.Size = new Size(63, 15);
             label2.TabIndex = 1;
             label2.Text = "Last Name";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(45, 106);
+            label3.Location = new Point(39, 80);
             label3.Name = "label3";
-            label3.Size = new Size(75, 20);
+            label3.Size = new Size(61, 15);
             label3.TabIndex = 1;
             label3.Text = "CellPhone";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(45, 152);
+            label4.Location = new Point(39, 114);
             label4.Name = "label4";
-            label4.Size = new Size(62, 20);
+            label4.Size = new Size(49, 15);
             label4.TabIndex = 1;
             label4.Text = "Address";
             // 
             // SaveBtn
             // 
-            SaveBtn.Location = new Point(45, 204);
+            SaveBtn.Location = new Point(39, 153);
+            SaveBtn.Margin = new Padding(3, 2, 3, 2);
             SaveBtn.Name = "SaveBtn";
-            SaveBtn.Size = new Size(308, 60);
+            SaveBtn.Size = new Size(270, 45);
             SaveBtn.TabIndex = 2;
             SaveBtn.Text = "Save";
             SaveBtn.UseVisualStyleBackColor = true;
@@ -115,9 +120,9 @@
             // 
             // Form2
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(383, 309);
+            ClientSize = new Size(335, 232);
             Controls.Add(SaveBtn);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -127,8 +132,11 @@
             Controls.Add(CellPhoneTxt);
             Controls.Add(LastNameTxt);
             Controls.Add(FirstNameTxt);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Form2";
             Text = "Add Person";
+            FormClosed += Form2_FormClosed;
+            Load += Form2_Load;
             ResumeLayout(false);
             PerformLayout();
         }

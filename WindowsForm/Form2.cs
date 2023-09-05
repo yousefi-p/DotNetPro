@@ -40,5 +40,14 @@ namespace WindowsForm
             CellPhoneTxt.Clear();
             AddressTxt.Clear();
         }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
+        {
+        }
     }
 }
