@@ -9,7 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWindowsApp", "FirstWin
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seasion04", "Seasion04", "{403579F8-E96B-49A2-A812-624C8FC8E74E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IdentificationApp", "IdentificationApp\IdentificationApp.csproj", "{80A41BBE-0FEB-4DD7-856B-924036E19673}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentificationApp", "IdentificationApp\IdentificationApp.csproj", "{80A41BBE-0FEB-4DD7-856B-924036E19673}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session 05", "Session 05", "{253E8AFD-851B-4807-B49C-69142C3D1E56}"
+	ProjectSection(SolutionItems) = preProject
+		SnappEntities\Class1.cs = SnappEntities\Class1.cs
+		SnappEntities\SnappEntities.csproj = SnappEntities\SnappEntities.csproj
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
