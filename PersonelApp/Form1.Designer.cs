@@ -37,8 +37,8 @@
             label4 = new Label();
             NationalIdTxt = new TextBox();
             label5 = new Label();
-            radioButton2 = new RadioButton();
-            radioButton1 = new RadioButton();
+            MaleRadio = new RadioButton();
+            FemaleRadio = new RadioButton();
             SaveBtn = new Button();
             ShowBtn = new Button();
             SuspendLayout();
@@ -125,27 +125,27 @@
             label5.Text = "Gender:";
             label5.Click += label1_Click;
             // 
-            // radioButton2
+            // MaleRadio
             // 
-            radioButton2.AutoSize = true;
-            radioButton2.Location = new Point(262, 234);
-            radioButton2.Name = "radioButton2";
-            radioButton2.Size = new Size(63, 24);
-            radioButton2.TabIndex = 1;
-            radioButton2.TabStop = true;
-            radioButton2.Text = "Male";
-            radioButton2.UseVisualStyleBackColor = true;
+            MaleRadio.AutoSize = true;
+            MaleRadio.Location = new Point(262, 234);
+            MaleRadio.Name = "MaleRadio";
+            MaleRadio.Size = new Size(63, 24);
+            MaleRadio.TabIndex = 1;
+            MaleRadio.TabStop = true;
+            MaleRadio.Text = "Male";
+            MaleRadio.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // FemaleRadio
             // 
-            radioButton1.AutoSize = true;
-            radioButton1.Location = new Point(128, 234);
-            radioButton1.Name = "radioButton1";
-            radioButton1.Size = new Size(78, 24);
-            radioButton1.TabIndex = 0;
-            radioButton1.TabStop = true;
-            radioButton1.Text = "Female";
-            radioButton1.UseVisualStyleBackColor = true;
+            FemaleRadio.AutoSize = true;
+            FemaleRadio.Location = new Point(128, 234);
+            FemaleRadio.Name = "FemaleRadio";
+            FemaleRadio.Size = new Size(78, 24);
+            FemaleRadio.TabIndex = 0;
+            FemaleRadio.TabStop = true;
+            FemaleRadio.Text = "Female";
+            FemaleRadio.UseVisualStyleBackColor = true;
             // 
             // SaveBtn
             // 
@@ -173,8 +173,8 @@
             ClientSize = new Size(361, 463);
             Controls.Add(ShowBtn);
             Controls.Add(SaveBtn);
-            Controls.Add(radioButton1);
-            Controls.Add(radioButton2);
+            Controls.Add(FemaleRadio);
+            Controls.Add(MaleRadio);
             Controls.Add(label5);
             Controls.Add(NationalIdTxt);
             Controls.Add(label4);
@@ -201,9 +201,10 @@
         private Label label4;
         private TextBox NationalIdTxt;
         private Label label5;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
+        private RadioButton MaleRadio;
+        private RadioButton FemaleRadio;
         private Button SaveBtn;
         private Button ShowBtn;
+
     }
 }

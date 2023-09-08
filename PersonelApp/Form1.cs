@@ -17,9 +17,12 @@ namespace PersonelApp
 
         private void SaveBtn_Click(object sender, EventArgs e)
         {
+            /* Declare Variables */
             List<Person> employee;
             Person person = new Person();
             var errors = new List<string>();
+
+            /* Check All the Field */
             if (Validator.CheckIsAlphabet(FirstNameTxt.Text))
             {
                 person.FirstName = FirstNameTxt.Text;
@@ -46,7 +49,33 @@ namespace PersonelApp
                 person.NationalId = NationalIdTxt.Text;
             }
             else { errors.Add(nameof(NationalIdTxt)); }
-         
+            if (FemaleRadio.Checked)
+            {
+                person.Gender = FemaleRadio.Text;
+            }
+            else if (MaleRadio.Checked)
+            {
+                person.Gender = MaleRadio.Text;
+            }
+            else
+            {
+                errors.Add("Radio Button");
+            }
+
+            /* Promt Error */
+            if (errors.LongCount() > 0)
+            {
+                string errorMessage = "You Have Error on ";
+                foreach (var error in errors)
+                {
+                    errorMessage += error;
+                }
+                Prompt.ShowDialog(errorMessage, "Error");
+            }
+
+
+
+
         }
     }
 }
