@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session02", "Session02", "{
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirstWindowsApp", "FirstWindowsApp\FirstWindowsApp\FirstWindowsApp.csproj", "{E0C5922B-113E-473A-9AA1-20256BDC20E2}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Seasion04", "Seasion04", "{403579F8-E96B-49A2-A812-624C8FC8E74E}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session04", "Session04", "{403579F8-E96B-49A2-A812-624C8FC8E74E}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentificationApp", "IdentificationApp\IdentificationApp.csproj", "{80A41BBE-0FEB-4DD7-856B-924036E19673}"
 EndProject
@@ -21,7 +21,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Snapp", "Snapp", "{3F67DA12
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WindowForm", "WindowForm", "{D587F284-650D-4EDF-8D87-8E602C4FB289}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForm", "WindowsForm\WindowsForm.csproj", "{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WindowsForm", "WindowsForm\WindowsForm.csproj", "{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Session06", "Session06", "{F158F87E-9D25-4021-83B2-EDC9D30CC29E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PersonelApp", "PersonelApp\PersonelApp.csproj", "{FCC3ABB3-1897-47AF-AFAC-69DDFA537355}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +45,10 @@ Global
 		{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FCC3ABB3-1897-47AF-AFAC-69DDFA537355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCC3ABB3-1897-47AF-AFAC-69DDFA537355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCC3ABB3-1897-47AF-AFAC-69DDFA537355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCC3ABB3-1897-47AF-AFAC-69DDFA537355}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +59,7 @@ Global
 		{3F67DA12-ECEF-4D32-B7AC-94E6D8F4CD5B} = {253E8AFD-851B-4807-B49C-69142C3D1E56}
 		{D587F284-650D-4EDF-8D87-8E602C4FB289} = {253E8AFD-851B-4807-B49C-69142C3D1E56}
 		{39718ABF-E4CB-43D4-9A1A-DDEB881AD3A7} = {D587F284-650D-4EDF-8D87-8E602C4FB289}
+		{FCC3ABB3-1897-47AF-AFAC-69DDFA537355} = {F158F87E-9D25-4021-83B2-EDC9D30CC29E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {1345533A-4ECA-4836-AE70-675FFBF4F5FB}
