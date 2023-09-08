@@ -41,6 +41,11 @@ namespace PersonelApp
             {
                 errors.Add(nameof(CellPhoneTxt));
             }
+            if (Validator.NationalIdChecked(NationalIdTxt.Text))
+            {
+                person.NationalId = NationalIdTxt.Text;
+            }
+            else { errors.Add(nameof(NationalIdTxt)); }
          
         }
     }

@@ -62,6 +62,15 @@ namespace PersonelApp.Models
             return false;
         }
 
+        public static bool NationalIdChecked(string str)
+        {
+            if (str.Length < 10 && IsNumber(str))
+            {
+                return true;
+            }
+            return false;
+        }
+
         public static string PersianToEnglish(string persianStr)
         {
             Dictionary<char, char> LettersDictionary = new Dictionary<char, char>
