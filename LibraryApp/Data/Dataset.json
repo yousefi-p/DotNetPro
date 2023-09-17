@@ -1,0 +1,20 @@
+{
+  "Books": [
+    {
+      "Isbn": "1803237805",
+      "Title": "C# 11 and .NET 7 – Modern Cross-Platform Development Fundamentals: Start building websites and services with ASP.NET Core 7",
+      "Author": "Mark J Price",
+      "Publisher": "Packt Publishing",
+      "Year": 2022,
+      "Available": true
+    },
+    {
+      "Isbn": "1803237805",
+      "Title": "Head First C#: A Learner's Guide to Real-World Programming with C# and .NET Core",
+      "Author": "Andrew Stellman",
+      "Publisher": "O'Reilly Media",
+      "Year": 2021,
+      "Available": true
+    }
+  ]
+}

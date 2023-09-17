@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,6 +16,8 @@ namespace LibraryApp.Models
         public DateOnly Year { get; set ; }
         public string Publisher { get; set; }
         public bool Available { get; set; }
+
+
 
     }
 }

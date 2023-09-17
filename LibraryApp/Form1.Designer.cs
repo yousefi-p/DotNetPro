@@ -32,8 +32,12 @@
             addBtn = new Button();
             dataGridView1 = new DataGridView();
             modifyBtn = new Button();
-            button1 = new Button();
+            searchTxt = new TextBox();
+            groupBox1 = new GroupBox();
+            searchBtn = new Button();
+            searchCombo = new ComboBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            groupBox1.SuspendLayout();
             SuspendLayout();
             // 
             // usersBtn
@@ -68,6 +72,7 @@
             dataGridView1.RowTemplate.Height = 25;
             dataGridView1.Size = new Size(683, 475);
             dataGridView1.TabIndex = 2;
+            dataGridView1.CellClick += dataGridView1_CellClick;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // modifyBtn
@@ -79,23 +84,52 @@
             modifyBtn.TabIndex = 3;
             modifyBtn.Text = "Modify Book";
             modifyBtn.UseVisualStyleBackColor = true;
+            modifyBtn.Click += modifyBtn_Click;
             // 
-            // button1
+            // searchTxt
             // 
-            button1.Location = new Point(88, 208);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 4;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            searchTxt.Location = new Point(6, 22);
+            searchTxt.Name = "searchTxt";
+            searchTxt.PlaceholderText = "ex. Java";
+            searchTxt.Size = new Size(221, 23);
+            searchTxt.TabIndex = 4;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Controls.Add(searchBtn);
+            groupBox1.Controls.Add(searchCombo);
+            groupBox1.Controls.Add(searchTxt);
+            groupBox1.Location = new Point(12, 140);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(233, 168);
+            groupBox1.TabIndex = 5;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // searchBtn
+            // 
+            searchBtn.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point);
+            searchBtn.Location = new Point(6, 109);
+            searchBtn.Name = "searchBtn";
+            searchBtn.Size = new Size(221, 42);
+            searchBtn.TabIndex = 6;
+            searchBtn.Text = "Search";
+            searchBtn.UseVisualStyleBackColor = true;
+            // 
+            // searchCombo
+            // 
+            searchCombo.FormattingEnabled = true;
+            searchCombo.Location = new Point(6, 66);
+            searchCombo.Name = "searchCombo";
+            searchCombo.Size = new Size(221, 23);
+            searchCombo.TabIndex = 5;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(991, 499);
-            Controls.Add(button1);
+            Controls.Add(groupBox1);
             Controls.Add(modifyBtn);
             Controls.Add(dataGridView1);
             Controls.Add(addBtn);
@@ -107,6 +141,8 @@
             Load += Form1_Load;
             Leave += Form1_Leave;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            groupBox1.ResumeLayout(false);
+            groupBox1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -114,8 +150,11 @@
 
         private Button usersBtn;
         private Button addBtn;
-        private DataGridView dataGridView1;
         private Button modifyBtn;
-        private Button button1;
+        private TextBox searchTxt;
+        private GroupBox groupBox1;
+        private Button searchBtn;
+        private ComboBox searchCombo;
+        public DataGridView dataGridView1;
     }
 }

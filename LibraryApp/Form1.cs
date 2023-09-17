@@ -36,14 +36,18 @@ namespace LibraryApp
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = books;
+
+
+
         }
 
         private void Form1_Activated(object sender, EventArgs e)
         {
-
-            InitializeComponent();
+            Form1 form = new Form1();
+            form.Refresh();
             dataGridView1.DataSource = books;
+            InitializeComponent();
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -62,6 +66,16 @@ namespace LibraryApp
         private void Form1_Leave(object sender, EventArgs e)
         {
             this.Activate();
+        }
+
+        private void modifyBtn_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
