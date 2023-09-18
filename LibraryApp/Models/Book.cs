@@ -13,11 +13,15 @@ namespace LibraryApp.Models
         public string Isbn { get; set; }
         public string Title { get; set; }
         public string Author { get; set; }
-        public DateOnly Year { get; set ; }
+        public int Year { get; set; }
         public string Publisher { get; set; }
         public bool Available { get; set; }
 
 
 
+    }
+
+    public class BookList{
+        public List<Book> Books { get; set; }
     }
 }

@@ -1,0 +1,18 @@
+{
+  "Users": [
+    {
+      "FullName": "Admin",
+      "Username": "admin",
+      "Password": "123456",
+      "CellPhone": "09121234567",
+      "Role": 1
+    },
+    {
+      "FullName": "Parham",
+      "Username": "parham",
+      "Password": "123456",
+      "CellPhone": "09121234589",
+      "Role": 2
+    }
+  ]
+}
