@@ -9,6 +9,7 @@ namespace LibraryApp
     {
         List<Book> books;
         List<User> users;
+        
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +31,16 @@ namespace LibraryApp
 
         }
 
+        public Form1(Book book)
+        {
+            try
+            {
+                books.Add(book);
+                Helper.Helper.WriteOnBookJsonFile(books);
+            }
+            catch { }
+        }
+
 
 
 
@@ -43,13 +54,21 @@ namespace LibraryApp
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Close();
+
+            LoginForm loginForm = new LoginForm();
+            loginForm.Visible = true;
         }
 
         private void addBtn_Click(object sender, EventArgs e)
         {
             AddBookForm addBookForm = new AddBookForm();
             addBookForm.ShowDialog();
+        }
+
+        private void Form1_Enter(object sender, EventArgs e, Book book)
+        {
+            AddBookForm addBookForm= new AddBookForm();
+            
         }
     }
 }

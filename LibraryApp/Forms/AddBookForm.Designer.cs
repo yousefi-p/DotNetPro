@@ -41,6 +41,12 @@
             publisherTxt = new TextBox();
             availableCheckBox = new CheckBox();
             AddBtn = new Button();
+            isbnError = new Label();
+            titleError = new Label();
+            authorError = new Label();
+            yearError = new Label();
+            publisherError = new Label();
+            errorMessage = new Label();
             SuspendLayout();
             // 
             // label1
@@ -109,6 +115,7 @@
             isbnTxt.Name = "isbnTxt";
             isbnTxt.Size = new Size(184, 23);
             isbnTxt.TabIndex = 1;
+            isbnTxt.Leave += isbnTxt_Leave;
             // 
             // titleTxt
             // 
@@ -116,6 +123,7 @@
             titleTxt.Name = "titleTxt";
             titleTxt.Size = new Size(184, 23);
             titleTxt.TabIndex = 2;
+            titleTxt.Leave += titleTxt_Leave;
             // 
             // authorTxt
             // 
@@ -123,6 +131,7 @@
             authorTxt.Name = "authorTxt";
             authorTxt.Size = new Size(184, 23);
             authorTxt.TabIndex = 3;
+            authorTxt.Leave += authorTxt_Leave;
             // 
             // yearTxt
             // 
@@ -130,6 +139,7 @@
             yearTxt.Name = "yearTxt";
             yearTxt.Size = new Size(184, 23);
             yearTxt.TabIndex = 4;
+            yearTxt.Leave += yearTxt_Leave;
             // 
             // publisherTxt
             // 
@@ -137,6 +147,7 @@
             publisherTxt.Name = "publisherTxt";
             publisherTxt.Size = new Size(184, 23);
             publisherTxt.TabIndex = 5;
+            publisherTxt.Leave += publisherTxt_Leave;
             // 
             // availableCheckBox
             // 
@@ -149,18 +160,91 @@
             // 
             // AddBtn
             // 
-            AddBtn.Location = new Point(68, 326);
+            AddBtn.Location = new Point(69, 326);
             AddBtn.Name = "AddBtn";
             AddBtn.Size = new Size(205, 67);
             AddBtn.TabIndex = 7;
             AddBtn.Text = "Add";
             AddBtn.UseVisualStyleBackColor = true;
+            AddBtn.Click += AddBtn_Click_1;
+            // 
+            // isbnError
+            // 
+            isbnError.AutoSize = true;
+            isbnError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            isbnError.ForeColor = Color.Red;
+            isbnError.Location = new Point(102, 29);
+            isbnError.Name = "isbnError";
+            isbnError.Size = new Size(21, 25);
+            isbnError.TabIndex = 8;
+            isbnError.Text = "*";
+            // 
+            // titleError
+            // 
+            titleError.AutoSize = true;
+            titleError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            titleError.ForeColor = Color.Red;
+            titleError.Location = new Point(102, 71);
+            titleError.Name = "titleError";
+            titleError.Size = new Size(21, 25);
+            titleError.TabIndex = 8;
+            titleError.Text = "*";
+            // 
+            // authorError
+            // 
+            authorError.AutoSize = true;
+            authorError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            authorError.ForeColor = Color.Red;
+            authorError.Location = new Point(102, 118);
+            authorError.Name = "authorError";
+            authorError.Size = new Size(21, 25);
+            authorError.TabIndex = 8;
+            authorError.Text = "*";
+            // 
+            // yearError
+            // 
+            yearError.AutoSize = true;
+            yearError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            yearError.ForeColor = Color.Red;
+            yearError.Location = new Point(102, 165);
+            yearError.Name = "yearError";
+            yearError.Size = new Size(21, 25);
+            yearError.TabIndex = 8;
+            yearError.Text = "*";
+            // 
+            // publisherError
+            // 
+            publisherError.AutoSize = true;
+            publisherError.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point);
+            publisherError.ForeColor = Color.Red;
+            publisherError.Location = new Point(102, 212);
+            publisherError.Name = "publisherError";
+            publisherError.Size = new Size(21, 25);
+            publisherError.TabIndex = 8;
+            publisherError.Text = "*";
+            // 
+            // errorMessage
+            // 
+            errorMessage.Anchor = AnchorStyles.Left;
+            errorMessage.ForeColor = Color.Red;
+            errorMessage.Location = new Point(69, 308);
+            errorMessage.Name = "errorMessage";
+            errorMessage.Size = new Size(205, 15);
+            errorMessage.TabIndex = 9;
+            errorMessage.TextAlign = ContentAlignment.MiddleCenter;
+            errorMessage.Visible = false;
             // 
             // AddBookForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(330, 418);
+            Controls.Add(errorMessage);
+            Controls.Add(publisherError);
+            Controls.Add(yearError);
+            Controls.Add(authorError);
+            Controls.Add(titleError);
+            Controls.Add(isbnError);
             Controls.Add(AddBtn);
             Controls.Add(availableCheckBox);
             Controls.Add(publisherTxt);
@@ -196,5 +280,11 @@
         private TextBox publisherTxt;
         private CheckBox availableCheckBox;
         private Button AddBtn;
+        private Label isbnError;
+        private Label titleError;
+        private Label authorError;
+        private Label yearError;
+        private Label publisherError;
+        private Label errorMessage;
     }
 }

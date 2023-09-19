@@ -11,7 +11,6 @@ namespace LibraryApp.Helper
     public class Helper
     {
 
-
         public static List<User> ReadUserJsonFile(string path)
         {
             var jsonString = File.ReadAllText(path);
@@ -51,6 +50,7 @@ namespace LibraryApp.Helper
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             });
 
+
             try
             {
                 // Write the updated JSON back to the file
@@ -74,6 +74,7 @@ namespace LibraryApp.Helper
 
             try
             {
+                
                 // Write the updated JSON back to the file
                 File.WriteAllText("D:\\My Repos\\LibraryApp\\Data\\UserData.json", updatedJson);
                 return true;
