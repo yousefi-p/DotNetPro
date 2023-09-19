@@ -43,7 +43,7 @@ namespace LibraryApp.Helper
             else { return new List<Book>(); }
         }
 
-        public static bool WriteOnBookJsonFile(List<Book> books)
+        public static bool WriteOnBookJsonFile(List<Book> books, string path)
         {
             var updatedJson = JsonSerializer.Serialize(books, new JsonSerializerOptions
             {
@@ -54,7 +54,7 @@ namespace LibraryApp.Helper
             try
             {
                 // Write the updated JSON back to the file
-                File.WriteAllText("D:\\My Repos\\LibraryApp\\Data\\BookData.json", updatedJson);
+                File.WriteAllText(path, updatedJson);
                 return true;
             }
             catch (Exception ex)
@@ -65,7 +65,7 @@ namespace LibraryApp.Helper
 
         }
 
-        public static bool WriteOnUserJsonFile(List<User> users)
+        public static bool WriteOnUserJsonFile(List<User> users, string path)
         {
             var updatedJson = JsonSerializer.Serialize(users, new JsonSerializerOptions
             {
@@ -76,7 +76,7 @@ namespace LibraryApp.Helper
             {
                 
                 // Write the updated JSON back to the file
-                File.WriteAllText("D:\\My Repos\\LibraryApp\\Data\\UserData.json", updatedJson);
+                File.WriteAllText(path, updatedJson);
                 return true;
             }
             catch (Exception ex)

@@ -9,13 +9,16 @@ namespace LibraryApp
     {
         List<Book> books;
         List<User> users;
-        
+        string BookPath = "\\My Repos\\LibraryApp\\Data\\BookData.json";
+        string UserPath = "\\My Repos\\LibraryApp\\Data\\UserData.json";
+
+
         public Form1()
         {
             InitializeComponent();
             try
             {
-                books = Helper.Helper.ReadBookJsonFile("\\My Repos\\LibraryApp\\Data\\BookData.json");
+                books = Helper.Helper.ReadBookJsonFile(BookPath);
 
             }
             catch (Exception ex)
@@ -25,7 +28,7 @@ namespace LibraryApp
 
             try
             {
-                users = Helper.Helper.ReadUserJsonFile("\\My Repos\\LibraryApp\\Data\\UserData.json");
+                users = Helper.Helper.ReadUserJsonFile(UserPath);
             }
             catch { }
 
@@ -36,7 +39,7 @@ namespace LibraryApp
             try
             {
                 books.Add(book);
-                Helper.Helper.WriteOnBookJsonFile(books);
+                Helper.Helper.WriteOnBookJsonFile(books, BookPath);
             }
             catch { }
         }
