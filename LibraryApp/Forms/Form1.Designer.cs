@@ -58,7 +58,7 @@
             addBtn.TabIndex = 1;
             addBtn.Text = "Add Book";
             addBtn.UseVisualStyleBackColor = true;
-            addBtn.Click += booksBtn_Click;
+            addBtn.Click += addBtn_Click;
             // 
             // bookGridView
             // 

@@ -1,5 +1,6 @@
 using LibraryApp.Models;
 using LibraryApp.Helper;
+using LibraryApp.Forms;
 
 namespace LibraryApp
 {
@@ -31,10 +32,6 @@ namespace LibraryApp
 
 
 
-        private void booksBtn_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -47,6 +44,12 @@ namespace LibraryApp
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Close();
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            AddBookForm addBookForm = new AddBookForm();
+            addBookForm.ShowDialog();
         }
     }
 }

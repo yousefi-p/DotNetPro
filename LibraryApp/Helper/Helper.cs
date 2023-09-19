@@ -43,5 +43,103 @@ namespace LibraryApp.Helper
             }
             else { return new List<Book>(); }
         }
+
+        public static bool WriteOnBookJsonFile(List<Book> books)
+        {
+            var updatedJson = JsonSerializer.Serialize(books, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            });
+
+            try
+            {
+                // Write the updated JSON back to the file
+                File.WriteAllText("D:\\My Repos\\LibraryApp\\Data\\BookData.json", updatedJson);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+            
+
+        }
+
+        public static bool WriteOnUserJsonFile(List<User> users)
+        {
+            var updatedJson = JsonSerializer.Serialize(users, new JsonSerializerOptions
+            {
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            });
+
+            try
+            {
+                // Write the updated JSON back to the file
+                File.WriteAllText("D:\\My Repos\\LibraryApp\\Data\\UserData.json", updatedJson);
+                return true;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
+
+
+        }
+
+
+        public static bool IsDigit(string str)
+        {
+            foreach (char c in str)
+            {
+                if (!char.IsDigit(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool IsAlpha(string str)
+        {
+            foreach(char c in str)
+            {
+                if (!char.IsLetter(c))
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool CheckIsbn(string str)
+        {
+            if (!string.IsNullOrEmpty(str) && IsDigit(str) && str.Length>=10 && str.Length <= 13)
+            {
+                return true;
+            }
+            return false;
+        }
+
+        public static bool CheckTxtBox(string str)
+        {
+            if (!string.IsNullOrEmpty(str))
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        public static bool CheckYear(string str)
+        {
+            if (!string.IsNullOrEmpty(str) && IsDigit(str) && str.Length == 4)
+            {
+                if (int.Parse(str) <= DateTime.Today.Year)
+                {
+                    return true;
+                }
+
+            }
+            return false;
+        }
     }
 }
